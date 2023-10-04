@@ -17,7 +17,7 @@ resource "aws_key_pair" "example-server-keypair" {
 }
 
 resource "aws_instance" "example-server" {
-  ami                         = "ami-0be3f0371736d5394" // Ubuntu 20.04 LTS
+  ami                         = "ami-00b7cc7d7a9f548ea" // Amazon Linux
   instance_type               = "t2.micro"
   key_name                    = aws_key_pair.example-server-keypair.key_name
   associate_public_ip_address = var.attach_public_ip
